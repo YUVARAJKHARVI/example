@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>program 5</title>
+  </head>
+  <body>
+    <center>
+
+    <canvas id="rect" width="300" height="300" style="border:2px dotted green;"></canvas>
+    <script type="text/javascript">
+        var c=document.getElementById("rect");
+        var ctx=c.getContext("2d");
+
+        ctx.beginPath();
+        ctx.arc(150,150,80,0,2*Math.PI);
+        ctx.stroke();
+
+        ctx.moveTo(110,80);
+        ctx.lineTo(195,215);
+        ctx.stroke();
+
+        ctx.font="40px verdana ";
+        ctx.fillText("PARKING", 70,280);
+
+        ctx.font = "130px verdana";
+        ctx.fillText("P", 110, 200);
+
+        ctx.font="40px verdana ";
+        ctx.fillText("NO", 125,50);
+        
+    </script>
+    </center>
+
+  </body>
+</html>
